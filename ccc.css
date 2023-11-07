@@ -1,0 +1,31 @@
+.app table > caption {
+    caption-side: top;
+    border: solid 0.25rem #fff;
+    background-color: #cbe2fe;
+    color: black;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+    text-align: left;
+}
+
+.app table > thead > tr > th {
+    background-color: #004880;
+    border: solid 0.25rem #fff;
+    color: #fff;
+    font-weight: normal;
+    padding: 0.25rem 0.5rem;
+    vertical-align: top;
+}
+
+.app table > tbody > tr > th {
+    background-color: #cbe2fe;
+    border: solid 0.25rem #fff;
+    font-weight: 400;
+    padding: 0.25rem 0.5rem;
+}
+
+.app table > tbody > tr > td {
+    background-color: #eee;
+    border: solid 0.25rem #fff;
+    padding: 0.25rem 0.5rem;
+}

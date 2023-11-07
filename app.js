@@ -1,24 +1,24 @@
 let tables = document.querySelectorAll('.table-to-card');
 
-// Loop through each table
 tables.forEach(function (table) {
     // Create a new element to hold the cards
     let cards = document.createElement('div');
-    cards.className = 'cards table-to-card-converted row';
+    cards.className = 'cards '
+                       + 'table-to-card-converted '
+                       + 'row '
+                       + 'd-lg-none ';
 
-    // Get the table headings
+    // Get the table headings and rows
     let headings = table.querySelectorAll('thead th');
-
-    // Get the table rows
     let rows = table.querySelectorAll('tbody tr');
 
     // Loop through each row
     rows.forEach(function (row) {
-        // Create a new element to hold the  individual card
+        // Create a new element to hold the individual card
         let cardContainer = document.createElement('div');
         cardContainer.className = 'card-container col-md-6 col-lg-4';
 
-        // Create a new card
+        // Create a new card and card body
         let card = document.createElement('div');
         card.className = 'card shadow mb-3';
         let cardBody = document.createElement('div');
@@ -50,18 +50,15 @@ tables.forEach(function (table) {
             cardBody.appendChild(cardText);
         });
 
-        // Add the card body to the card
+        // build up the card
         card.appendChild(cardBody);
-
-        // Add the card to the card container
         cardContainer.appendChild(card);
-
-        // Add the card to the card container
         cards.appendChild(cardContainer);
     });
 
-    // Replace the table with the card container
+    // Add the cards to the table parent
     table.parentNode.appendChild(cards, table);
 
-    table.className = table.className + ' d-md-none';
+    // Show table when screen size is lg or larger
+    table.className = table.className + ' d-lg-block';
 });

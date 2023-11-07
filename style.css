@@ -3,7 +3,8 @@
 }
 
 .table-to-card-converted .card-header {
-    background-color: #82c5ff;
+    background-color: #004880;
+    color:white;
 }
 
 .table-to-card-converted .card-body {
@@ -16,16 +17,17 @@
 }
 
 .table-to-card-converted .card-text:nth-child(2n-1){
-    background-color: #d4e8fb;
+    background-color: #cbe2fe;
 }
 
 .table-to-card-converted .card-text{
     margin-bottom:0;
     padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: #f4f9fe;
+    background-color: #eee;
 }
 
 .table-to-card-converted .card-text:last-child{
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 0 0 4px 4px;
 }
+
